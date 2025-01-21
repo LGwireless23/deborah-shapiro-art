@@ -1,0 +1,179 @@
+.header-image-sm {
+    background-image: url("images/deborah-shapiro-watercolor.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    min-height: 300px;
+}
+
+.header-image-lg {
+    background-image: url("images/deborah-shapiro-watercolor-lg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    min-height: 600px;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding-left: 150px;
+        padding-top: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 40px;
+    }
+
+    li {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    #about-nav {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-header-sm {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    .about-text-sm {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    .second-subheader {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+
+    .second-text {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-section-lg, .about-section-second-lg {
+        box-sizing: border-box;
+    }
+
+    .about-header-lg, .second-header-lg {
+        font-size: 32px;
+    }
+
+    .about-row-lg {
+        padding-bottom: 60px;
+        height: 770px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .text-and-image-container {
+        position: relative;
+        height: 570px;
+        width: 1000px;
+        margin-top: 100px;
+        background-color: #DAD0C3;
+        overflow: visible;
+    }
+
+    .about-one-container {
+        position: relative;
+        top: 0px;
+    }
+
+    .about-two-container {
+        position: relative;
+        top: 280px;
+    }
+
+    .text-container-lg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        max-width: 650px;
+        padding: 40px 0 0 40px;
+    }
+
+    .second-text-container-lg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        max-width: 650px;
+        padding: 30px 0 0 0;
+    }
+
+    .img-container-lg {
+        position: absolute;
+        top: -40px;
+        right: -10px;
+        display: inline-block;
+        width: 450px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .second-image-container-lg {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        display: inline-block;
+        width: 290px;
+        height: 100%;
+    }
+
+    .self-portrait-lg {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-left: 70px;
+    }
+}
+
+.large-footer-image {
+    width: 100%;
+}
+
+
+footer {
+    /* background-color: #e8e8e8; */
+}
+
+footer .facebook, .instagram, .email {
+    margin: 60px 15px 15px 20px;
+}
+
+svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: #000;
+}
+
+#copyright {
+    width: .9rem;
+    height: .9rem;
+    vertical-align: text-bottom;
+    color: #a0a0a0
+}
+
+.copyright {
+    font-size: .7rem;
+    margin-top: 10;
+    margin-bottom: 20px;
+    color: #a0a0a0
+}
