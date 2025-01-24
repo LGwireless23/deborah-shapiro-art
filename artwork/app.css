@@ -48,82 +48,86 @@
     margin-bottom: 30px;
 }
 
-.image {
-    height: 290px;
-    width: 290px;
-    transition: transform 0.5s ease-in-out;
+.masonry-container {
+    column-count: 3;
+    column-gap: 16px;
+    padding: 0 100px 0 100px;
 }
 
-.picture-effects {
+.masonry-item {
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.masonry-item::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(105, 105, 105, 0);
-    opacity: 0;
-    transition: opacity .5s ease-in-out, background-color .5s ease-in-out;
-    pointer-events: none;
-}
-
-.image:hover {
-    transform: scale(0.98);
-    transition: transform .5s ease-in-out;
-}
-
-.image:hover .picture-effects {
-    opacity: 1;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transform: scale(.97);
+    z-index: 1;
+}
+
+.masonry-item:hover::after {
+    opacity: 1;
+}
+
+.masonry-item:hover img {
+    transform: scale(.97);
     cursor: pointer;
 }
 
-.artwork-flex {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-h2 {
+.masonry-item .text-overlay {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-15%, -15%);
     color: white;
-    font-size: 27px;
-    padding: 30px 0 0 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
 }
 
-h3 {
-    color: white;
-    font-size: 17px;
-    padding: 10px 0 0 30px;
-    font-weight: 300;
+.masonry-item:hover .text-overlay {
+    opacity: 1;
 }
 
-h4 {
-    color: white;
-    font-size: 17px;
-    padding: 0 0 0 30px;
-    font-weight: 300;
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
-.artwork-row {
-    padding: 11px 30px 11px 30px;
+.text-1 {
+    opacity: .8;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 10px;
+    z-index: 15;
 }
 
-.picture-one {
-    height: 290px;
-    width: 290px;
-    background-image: url(../images/deborah-shapiro-painting.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+.text-2, .text-3 {
+    opacity: .8;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: .9;
+    z-index: 15;
 }
 
-.picture-two {
-    height: 290px;
-    width: 290px;
-    background-image: url(../images/deborah-shapiro-art.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
+
+
+
 
 
 
