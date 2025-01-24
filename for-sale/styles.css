@@ -1,5 +1,5 @@
 .header-image-sm {
-    background-image: url("images/deborah-shapiro-watercolor.png");
+    background-image: url("../images/deborah-shapiro-watercolor.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,125 +34,126 @@
     #about-nav {
         padding-left: 25px;
     }
+}
 
-    @media (min-width: 992px) {
-        .artwork-heading {
-            font-size: 40px;
-            text-align: center;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
+.artwork-heading {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-        .space {
-            height: 100px;
-            margin-bottom: 30px;
-        }
+.space {
+    height: 100px;
+    margin-bottom: 30px;
+}
 
-        .image {
-            height: 300px;
-            width: 300px;
-            transition: transform 0.5s ease-in-out;
-        }
+.image {
+    height: 290px;
+    width: 290px;
+    transition: transform 0.5s ease-in-out;
+}
 
-        .picture-effects {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(105, 105, 105, 0);
-            opacity: 0;
-            transition: opacity .5s ease-in-out, background-color .5s ease-in-out;
-            pointer-events: none;
-        }
+.picture-effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(105, 105, 105, 0);
+    opacity: 0;
+    transition: opacity .5s ease-in-out, background-color .5s ease-in-out;
+    pointer-events: none;
+}
 
-        .image:hover {
-            transform: scale(0.98);
-            transition: transform .5s ease-in-out;
-        }
+.image:hover {
+    transform: scale(0.98);
+    transition: transform .5s ease-in-out;
+}
 
-        .image:hover .picture-effects {
-            opacity: 1;
-            background-color: rgba(0, 0, 0, 0.4);
-            cursor: pointer;
-        }
+.image:hover .picture-effects {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
 
-        .artwork-flex {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
+.artwork-flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
-        h2 {
-            color: white;
-            font-size: 27px;
-            padding: 30px 0 0 30px;
-        }
+h2 {
+    color: white;
+    font-size: 27px;
+    padding: 30px 0 0 30px;
+}
 
-        h3 {
-            color: white;
-            font-size: 17px;
-            padding: 10px 0 0 30px;
-            font-weight: 300;
-        }
+h3 {
+    color: white;
+    font-size: 17px;
+    padding: 10px 0 0 30px;
+    font-weight: 300;
+}
 
-        h4 {
-            color: white;
-            font-size: 17px;
-            padding: 0 0 0 30px;
-            font-weight: 300;
-        }
+h4 {
+    color: white;
+    font-size: 17px;
+    padding: 0 0 0 30px;
+    font-weight: 300;
+}
 
-        .artwork-row {
-            padding: 11px 30px 11px 30px;
-        }
+.artwork-row {
+    padding: 11px 30px 11px 30px;
+}
 
-        .picture-one {
-            height: 300px;
-            width: 300px;
-            background-image: url(../images/deborah-shapiro-painting.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
+.picture-one {
+    height: 290px;
+    width: 290px;
+    background-image: url(../images/deborah-shapiro-painting.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
-        .picture-two {
-            height: 300px;
-            width: 300px;
-            background-image: url(../images/deborah-shapiro-art.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-    }
-
+.picture-two {
+    height: 290px;
+    width: 290px;
+    background-image: url(../images/deborah-shapiro-art.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
 
 
-    footer {
-        /* background-color: #e8e8e8; */
-    }
 
-    footer .facebook, .instagram, .email {
-        margin: 60px 15px 15px 20px;
-    }
 
-    svg {
-        width: 1.4rem;
-        height: 1.4rem;
-        color: #000;
-    }
 
-    #copyright {
-        width: .9rem;
-        height: .9rem;
-        vertical-align: text-bottom;
-        color: #a0a0a0
-    }
+footer {
+    /* background-color: #e8e8e8; */
+}
 
-    .copyright {
-        font-size: .7rem;
-        margin-top: 10;
-        margin-bottom: 20px;
-        color: #a0a0a0
-    }
+footer .facebook, .instagram, .email {
+    margin: 60px 15px 15px 20px;
+}
+
+svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: #000;
+}
+
+#copyright {
+    width: .9rem;
+    height: .9rem;
+    vertical-align: text-bottom;
+    color: #a0a0a0
+}
+
+.copyright {
+    font-size: .7rem;
+    margin-top: 10;
+    margin-bottom: 20px;
+    color: #a0a0a0
+}
