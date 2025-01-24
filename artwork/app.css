@@ -48,10 +48,25 @@
     margin-bottom: 30px;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px 0 100px;
+}
+
+.img-container {
+    padding: 20px 0 20px 0;
+}
+
+
+
+
+
 .masonry-container {
     column-count: 3;
     column-gap: 16px;
-    padding: 0 100px 0 100px;
+    padding: 0 200px 0 200px;
 }
 
 .masonry-item {
@@ -125,7 +140,22 @@ img {
     z-index: 15;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .text-1 {
+        font-size: 20px;
+    }
 
+    .text-2, .text-3 {
+        font-size: 15px;
+        line-height: .3;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .masonry-container {
+        padding: 0 50px 0 50px;
+    }
+}
 
 
 
