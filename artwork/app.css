@@ -16,6 +16,10 @@
     min-height: 600px;
 }
 
+.masonry-item {
+    padding: 0 10px 0 10px;
+}
+
 @media (min-width: 992px) {
     .navbar {
         padding-left: 150px;
