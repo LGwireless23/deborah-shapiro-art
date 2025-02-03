@@ -73,6 +73,19 @@
     margin-bottom: 16px;
     overflow: hidden;
     position: relative;
+    opacity: 0;
+    /* Initially invisible */
+    transform: translateY(30px);
+    /* Initially off-screen (down) */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Smooth transition */
+}
+
+.masonry-item.visible {
+    opacity: 1;
+    /* Make them visible */
+    transform: translateY(0);
+    /* Move to their natural position */
 }
 
 .masonry-item::after {
