@@ -3,7 +3,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     min-height: 300px;
 }
 
@@ -14,6 +14,10 @@
     background-position: top;
     background-attachment: fixed;
     min-height: 600px;
+}
+
+.navbar-brand {
+    padding-left: 10px;
 }
 
 @media (min-width: 992px) {
@@ -63,7 +67,16 @@
     }
 }
 
-@media (min-width: 992px) {
+.about-section-first-img {
+    padding: 0 20px 0 20px;
+}
+
+.about-section-second-img {
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+@media (min-width: 1100px) {
     .about-section-lg, .about-section-second-lg {
         box-sizing: border-box;
     }
@@ -74,19 +87,30 @@
 
     .about-row-lg {
         padding-bottom: 60px;
-        height: 790px;
+        height: 450px;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-wrap: nowrap;
     }
 
-    .text-and-image-container {
+    .text-and-image-container-1 {
         position: relative;
-        height: 570px;
+        height: 300px;
         width: 1000px;
-        margin-top: 100px;
+        margin-top: 75px;
         background-color: white;
+        overflow: visible;
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .text-and-image-container-2 {
+        position: relative;
+        height: 296px;
+        width: 1010px;
+        margin-top: 80px;
         overflow: visible;
         font-size: 17px;
         line-height: 1.6;
@@ -95,12 +119,29 @@
 
     .about-one-container {
         position: relative;
-        top: 0px;
+    }
+
+    .about-section-lg-2 {
+        background-image: url("images/deborah-shapiro-watercolor-lg-2.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 400px;
+    }
+
+    .about-divider {
+        background-image: url("images/deborah-shapiro-watercolor-lg.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 400px;
     }
 
     .about-two-container {
         position: relative;
-        top: 300px;
+        right: -5px;
     }
 
     .text-container-lg {
@@ -122,7 +163,7 @@
         text-align: right;
     }
 
-    .img-container-lg {
+    .img-container-lg-1 {
         position: absolute;
         top: -40px;
         right: -12px;
@@ -135,10 +176,20 @@
     .second-image-container-lg {
         position: absolute;
         top: 0;
-        left: -12px;
+        left: -5px;
         display: inline-block;
-        width: 290px;
+        width: 320px;
         height: 100%;
+    }
+
+    .img-container-lg-3 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 450px;
+        height: 100%;
+        padding: 40px 0 0 100px;
     }
 
     .self-portrait-lg {
@@ -153,11 +204,390 @@
     }
 }
 
-.large-footer-image {
-    width: 100%;
-    opacity: .7;
+@media (min-width: 992px) and (max-width: 1100px) {
+    .about-section-lg, .about-section-second-lg {
+        box-sizing: border-box;
+    }
+
+    .about-header-lg, .second-header-lg {
+        font-size: 32px;
+    }
+
+    .about-row-lg {
+        padding-bottom: 60px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .text-and-image-container-1 {
+        position: relative;
+        height: 300px;
+        width: 950px;
+        margin-top: 75px;
+        background-color: white;
+        overflow: visible;
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .text-and-image-container-2 {
+        position: relative;
+        height: 296px;
+        width: 950px;
+        margin-top: 80px;
+        overflow: visible;
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .about-one-container {
+        position: relative;
+    }
+
+    .about-section-lg-2 {
+        background-image: url("images/deborah-shapiro-watercolor-lg-2.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 400px;
+    }
+
+    .about-divider {
+        background-image: url("images/deborah-shapiro-watercolor-lg.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 400px;
+    }
+
+    .about-two-container {
+        position: relative;
+        right: -5px;
+    }
+
+    .text-container-lg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        max-width: 600px;
+        padding: 40px 0 0 0;
+    }
+
+    .second-text-container-lg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        max-width: 550px;
+        padding: 20px 0 0 0;
+        text-align: right;
+    }
+
+    .img-container-lg-1 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 450px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .second-image-container-lg {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        display: inline-block;
+        width: 320px;
+        height: 100%;
+    }
+
+    .img-container-lg-3 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 450px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .self-portrait-lg {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-left: 70px;
+    }
+
+    .about-header-lg, .second-header-lg {
+        padding-bottom: 10px;
+    }
 }
 
+@media (min-width: 850px) and (max-width: 991px) {
+    .about-section-lg, .about-section-second-lg {
+        box-sizing: border-box;
+    }
+
+    .about-header-lg, .second-header-lg {
+        font-size: 28px;
+    }
+
+    .about-row-lg {
+        padding-bottom: 60px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .text-and-image-container-1 {
+        position: relative;
+        height: 300px;
+        width: 800px;
+        margin-top: 75px;
+        background-color: white;
+        overflow: visible;
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .text-and-image-container-2 {
+        position: relative;
+        height: 296px;
+        width: 800px;
+        margin-top: 80px;
+        overflow: visible;
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .about-one-container {
+        position: relative;
+    }
+
+    .about-section-lg-2 {
+        background-image: url("images/deborah-shapiro-watercolor-lg-2.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 400px;
+    }
+
+    .about-divider {
+        background-image: url("images/deborah-shapiro-watercolor-lg.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 400px;
+    }
+
+    .about-two-container {
+        position: relative;
+        right: -5px;
+    }
+
+    .text-container-lg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 500px;
+        padding: 0 0 0 0;
+        font-size: 16px;
+    }
+
+    .second-text-container-lg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        max-width: 500px;
+        padding: 20px 0 0 0;
+        text-align: right;
+    }
+
+    .img-container-lg-1 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 400px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .second-image-container-lg {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        display: inline-block;
+        width: 270px;
+        height: 100%;
+    }
+
+    .img-container-lg-3 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 400px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .self-portrait-lg {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-left: 70px;
+    }
+
+    .about-header-lg, .second-header-lg {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+    .about-section-lg, .about-section-second-lg {
+        box-sizing: border-box;
+    }
+
+    .about-header-lg, .second-header-lg {
+        font-size: 25px;
+    }
+
+    .about-row-lg {
+        padding-bottom: 60px;
+        height: 390px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .text-and-image-container-1 {
+        position: relative;
+        height: 300px;
+        width: 700px;
+        margin-top: 75px;
+        background-color: white;
+        overflow: visible;
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .text-and-image-container-2 {
+        position: relative;
+        height: 296px;
+        width: 700px;
+        margin-top: 80px;
+        overflow: visible;
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .about-one-container {
+        position: relative;
+    }
+
+    .about-section-lg-2 {
+        background-image: url("images/deborah-shapiro-watercolor-lg-2.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 400px;
+    }
+
+    .about-divider {
+        background-image: url("images/deborah-shapiro-watercolor-lg.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 400px;
+    }
+
+    .about-two-container {
+        position: relative;
+        right: -5px;
+    }
+
+    .text-container-lg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 400px;
+        padding: 0 0 0 0;
+        font-size: 15px;
+    }
+
+    .second-text-container-lg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        max-width: 350px;
+        padding: 10px 0 0 0;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .img-container-lg-1 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 400px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .second-image-container-lg {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        display: inline-block;
+        width: 280px;
+        height: 100%;
+    }
+
+    .img-container-lg-3 {
+        position: absolute;
+        top: -40px;
+        right: -12px;
+        display: inline-block;
+        width: 400px;
+        height: 100%;
+        padding: 40px 0 0 100px;
+    }
+
+    .self-portrait-lg {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-left: 70px;
+    }
+
+    .about-header-lg, .second-header-lg {
+        padding-bottom: 10px;
+    }
+}
 
 footer {
     /* background-color: #e8e8e8; */
