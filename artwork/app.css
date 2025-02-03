@@ -20,6 +20,10 @@
     padding: 0 10px 0 10px;
 }
 
+.navbar-brand {
+    padding-left: 10px;
+}
+
 @media (min-width: 992px) {
     .navbar {
         padding-left: 150px;
@@ -45,6 +49,12 @@
     text-align: center;
     color: rgb(0, 0, 0, 0.6);
     padding-top: 100px;
+}
+
+@media (max-width: 575px) {
+    .artwork-heading {
+        padding-top: 40px;
+    }
 }
 
 .flex-container {
