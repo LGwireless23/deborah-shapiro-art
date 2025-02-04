@@ -111,13 +111,15 @@
 .masonry-item .text-overlay {
     position: absolute;
     top: 15%;
-    left: 15%;
+    left: 80px;
     transform: translate(-15%, -15%);
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 2;
 }
+
+.text-overlay {}
 
 .masonry-item:hover .text-overlay {
     opacity: 1;
