@@ -90,6 +90,12 @@
             <div class="masonry-item">
                 <img src="../images/artwork/abstract-1.jpeg" alt="Abstract 1">
                 <div class="text-overlay">
+                    <div class="text-1">Text 1
+                    </div>
+                    <div class="text-2">Text 2
+                    </div> <br>
+                    <div class="text-3">Text 3
+                    </div>
                 </div>
             </div>
             <div class="masonry-item">
@@ -762,6 +768,15 @@
                 observer.observe(item);
             }, index * 200); // Delay based on the index
         });
+
+        if (window.matchMedia("(max-width: 576px)").matches) {
+            document.querySelectorAll('.masonry-item img').forEach(img => {
+                img.addEventListener('click', function () {
+                    this.closest('.masonry-item').classList.toggle('clicked');
+                });
+            });
+        }
+
     </script>
 
     <script>
