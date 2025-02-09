@@ -36,6 +36,51 @@
     }
 }
 
+.contact-flex {
+    background-color: #f0f0f0;
+}
+
+.heading {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding-left: 60px;
+}
+
+.heading h1 {
+    text-align: left;
+    padding: 90px 0 0 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.address {
+    font-size: 20px;
+}
+
+.line {
+    width: 145px;
+    height: 0px;
+    border-top: 2px solid black;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-flex {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #f0f0f0;
+    }
+
+    .heading {
+        width: 45vw;
+    }
+
+    .form {
+        width: 45vw;
+    }
+}
+
 
 
 /* styles.css */
@@ -47,6 +92,7 @@
     align-items: center;
     height: 90vh;
     margin: 0;
+    padding: 0 30px;
 }
 
 .form-container {

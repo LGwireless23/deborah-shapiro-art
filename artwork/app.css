@@ -119,8 +119,6 @@
     z-index: 2;
 }
 
-.text-overlay {}
-
 .masonry-item:hover .text-overlay {
     opacity: 1;
 }
@@ -152,6 +150,12 @@ img {
     z-index: 15;
 }
 
+.up-button {
+    float: right;
+    padding-right: 200px;
+}
+
+
 @media (min-width: 768px) and (max-width: 992px) {
     .text-1 {
         font-size: 20px;
@@ -161,15 +165,40 @@ img {
         font-size: 15px;
         line-height: .3;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1200px) {
+    .up-button {
+        padding-right: 50px;
+    }
+
     .masonry-container {
         padding: 0 50px 0 50px;
     }
 }
 
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .masonry-container {
+        padding: 0 50px 0 50px;
+    }
+
+    .up-button {
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .up-button {
+        padding-right: 100px;
+    }
+}
+
 @media (max-width: 576px) {
+
+    .up-button {
+        padding-right: 15px;
+    }
+
     .masonry-item::after {
         content: '';
         position: absolute;
