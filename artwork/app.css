@@ -63,7 +63,7 @@
 .masonry-container {
     column-count: 3;
     column-gap: 16px;
-    padding: 0 200px 0 200px;
+    padding: 0 300px 0 300px;
 }
 
 .masonry-item {
