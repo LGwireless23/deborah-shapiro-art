@@ -264,6 +264,39 @@ footer .facebook, .instagram, .email {
     margin: 60px 15px 15px 20px;
 }
 
+footer .facebook {
+    padding-left: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    footer .facebook {
+        padding-left: 50px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    footer .facebook {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    footer .facebook {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    footer .facebook {
+        padding-left: 15px;
+    }
+}
+
 svg {
     width: 1.4rem;
     height: 1.4rem;
